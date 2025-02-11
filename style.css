@@ -1,3 +1,22 @@
 p {
   color: green;
 }
+
+/* [div="cc"] {
+  background-color: blue;
+} */
+.ampoule {
+  width: 150px;
+  height: 150px;
+  border: solid 2px black;
+  padding: 50px;
+  border-radius: 50%;
+}
+
+.on {
+  background-color: yellow;
+}
+.off {
+  background-color: black;
+  color: white;
+}
