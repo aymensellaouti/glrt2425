@@ -27,23 +27,23 @@ cities = [
   "Kasserine",
   "Monastir",
 ];
-// const lampe = document.querySelector(".lampe");
-// setInterval(() => {
-//   // lampe.classList.toggle("cc");
-//   lampe.classList.toggle("on");
-//   lampe.classList.toggle("off");
-// }, 2000);
+const lampe = document.querySelector(".lampe");
+setInterval(() => {
+  // lampe.classList.toggle("cc");
+  lampe.classList.toggle("on");
+  lampe.classList.toggle("off");
+}, 2000);
 function createLiCity(cityName) {
   const liCity = document.createElement("li");
   liCity.innerHTML = cityName;
   return liCity;
 }
-// const citiesOl = document.querySelector(".cities");
-// let index = 0;
-// setInterval(() => {
-//   if (!(index % cities.length)) {
-//     citiesOl.innerHTML = "";
-//   }
-//   citiesOl.appendChild(createLiCity(cities[index % cities.length]));
-//   index++;
-// }, 2000);
+const citiesOl = document.querySelector(".cities");
+let index = 0;
+setInterval(() => {
+  if (!(index % cities.length)) {
+    citiesOl.innerHTML = "";
+  }
+  citiesOl.appendChild(createLiCity(cities[index % cities.length]));
+  index++;
+}, 2000);
