@@ -1,4 +1,7 @@
 const t = [1, 2, 3, 4, 11, 21, 23, 45, 35];
+const total = t.reduce((acc, actualVal) => acc + actualVal, 10);
+console.log({ total });
+
 t.sort((a, b) => -a + b);
 console.log(t);
 
